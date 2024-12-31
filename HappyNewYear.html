@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy new year</title>
+    <link rel="stylesheet" href="firework.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="fireworks">
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+    </div>
+    <main>
+        <h1> Happy </h1>
+        <h1> new </h1>
+        <h1> Year </h1>
+        <h1>2025</h1>
+        <button id="button" onclick="block()">
+            <p>Click me</p>
+        </button>
+    </main>
+    <script>
+        const fireworks = document.querySelector(".fireworks");
+        const button = document.querySelector("#button");
+
+        function block() {
+            fireworks.style.display = 'block';
+            button.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
